@@ -1,0 +1,94 @@
+/**
+* ! changing default values.
+**/
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+* ! styling the form.
+**/
+.form {
+  width: 90%;
+  max-width: 750px;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0 2.5rem;
+}
+fieldset {
+  border: none;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.label-text {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.3rem;
+  color: #777777;
+  margin-bottom: 0.8rem;
+}
+.input-control {
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  border: 3px solid #f0f0f0;
+}
+.form-btn {
+  width: 100%;
+  font-size: 2.3rem;
+  background-color: #3498db;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.warning-message {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: red;
+  padding-left: 1rem;
+}
+
+.form-control.error .warning-message {
+  display: block;
+}
+.form-control.error .input-control {
+  border-color: #e74c3c;
+}
+.form-control.success .input-control {
+  border-color: #2ecc71;
+}

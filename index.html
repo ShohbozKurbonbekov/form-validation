@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="main-sources/styles.css" />
+    <script defer src="main-sources/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- FORM-->
+    <form class="form" id="form">
+      <h1 class="form-title">Register With Us</h1>
+      <fieldset>
+        <label for="username" class="label-text"> Username </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          class="input-control"
+        />
+        <span class="warning-message" id="warningMessage"
+          >Username must be at least 3 characters
+        </span>
+      </fieldset>
+      <fieldset>
+        <label for="email" class="label-text"> Email </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          class="input-control"
+        />
+        <span class="warning-message" id="warningMessage"
+          >Email is not valid
+        </span>
+      </fieldset>
+      <fieldset>
+        <label for="password" class="label-text">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          class="input-control"
+        />
+        <span class="warning-message" id="warningMessage"
+          >Password must be at least 6 characters
+        </span>
+      </fieldset>
+      <fieldset>
+        <label for="password_2" class="label-text"> Confirm Password </label>
+        <input
+          type="password"
+          id="password_2"
+          name="password2"
+          placeholder="Enter password again"
+          class="input-control"
+        />
+        <span class="warning-message" id="warningMessage"
+          >Password2 is required
+        </span>
+      </fieldset>
+      <button type="submit" class="form-btn" id="formBtn">Submit</button>
+    </form>
+  </body>
+</html>
